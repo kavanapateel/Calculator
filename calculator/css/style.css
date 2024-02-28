@@ -1,0 +1,90 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  &:not(i) {
+    filter: drop-shadow(1px 1px 1px #121212);
+  }
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  &[type="reset"] {
+    background-color: #ff8080;
+    &:hover {
+      background-color: #ff5050;
+    }
+  }
+  &[type="button"] {
+    background-color: #b3b3ff;
+    &:hover {
+      background-color: #c4c4f7;
+      border-color: #121212;
+    }
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  width: 100vw;
+  width: 100svw;
+  background-color: #9999ff;
+  background-image: url("../img/vector-abstract-background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode:luminosity;
+  #calc-body {
+    border: 0.1rem solid #9999ff;
+    background: #12121250;
+    border-radius: 1rem;
+    padding: 1rem 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.25rem #9999ff;
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 0;
+      h2 {
+        margin: 0;
+        color: #f2f2f2;
+      }
+      input {
+        padding: 0.5rem 1rem;
+        text-align: end;
+        width: 75%;
+        border: none;
+        border-radius: 0.5rem;
+        outline: none;
+        cursor: none;
+        font-size: 18px;
+        font-weight: 800;
+      }
+    }
+    #buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      .numeros {
+        width: 100%;
+        .numeric {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    }
+  }
+}
